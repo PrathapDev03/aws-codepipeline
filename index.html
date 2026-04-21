@@ -3,33 +3,72 @@
 
 <head>
     <title>HTML Login Form</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4CAF50;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
 </head>
 
 <body>
     <div class="main">
+        <h1>GeeksforGeeks</h1>
         <h3>Enter your login credentials</h3>
 
         <form action="">
-            <label for="first">
-                Username:
-            </label>
-            <input type="text" id="first" name="first" 
+            <label for="first">Username:</label>
+            <input type="text" id="first" name="first"
                 placeholder="Enter your Username" required>
 
-            <label for="password">
-                Password:
-            </label>
-            <input type="password" id="password" name="password" 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
                 placeholder="Enter your Password" required>
 
             <div class="wrap">
-                <button type="submit">
-                    Submit
-                </button>
+                <button type="submit">Submit</button>
             </div>
         </form>
-        
+
         <p>Not registered?
             <a href="#" style="text-decoration: none;">
                 Create an account
